@@ -1,0 +1,91 @@
+1)
+#include <stdio.h>
+#include <locale.h>
+
+int main () {
+		setlocale(LC_ALL, "Portuguese");
+	float salario_atual, novo_salario;
+	
+	//Mostra a mensagem antes da leitura do salário
+	printf("\nDigite o salario do funcionario: ");
+	//Recebe o salário
+	scanf("%f%*c", &salario_atual);
+	//novo salario 
+	novo_salario = salario_atual*1.25;
+	//Exibe salário
+	printf("O salário com reajustes é: R$ %.2f\n", novo_salario);
+	
+	return 0;
+}
+
+2)
+#include <stdio.h>
+#include <locale.h>
+
+int main () {
+		setlocale(LC_ALL, "Portuguese");
+	float salario_base, salario_total, imposto, gratificacao;
+	
+	printf("\nDigite o salario do funcionario: ");
+	
+	scanf("%f%*c", &salario_base);
+	imposto = salario_base*0.7;
+	gratificacao = 1.5;
+	salario_total = (salario_base*gratificacao)-imposto;
+	
+	printf("O salário total do funcionario e de: R$ %.2f\n", salario_total);
+	
+	return 0;
+}
+
+3)
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+	setlocale(LC_ALL, "Portuguese");
+	
+	float deposito, taxa, rendimento, total;
+	
+	//recebe o valor do deposito
+	printf("\nDigite o valor do deposito: ");
+	//armazena o valor na variavel "deposito".
+	scanf("%f%*c", &deposito);
+	//recebe o valor da taxa
+	printf("\nInsira a taxa de juros: ");
+	//armazena o valor na variavel "taxa".
+	scanf("%f%*c", &taxa);
+	
+	taxa = taxa/100;
+	rendimento = deposito*taxa;
+	total = deposito+rendimento;
+	
+	printf("O valor do rendimento e de: R$ %.2f\n", rendimento);
+	printf("O valor total depois do rendimento e de: R$ %.2f\n", total);
+}
+
+4)
+#include <stdio.h>
+#include <locale.h>
+
+int main () {
+		setlocale(LC_ALL, "Portuguese");
+	int polegadas, pes, jardas, milhas;
+	
+	//Informa a quantidade de pés
+	printf("\nDigite uma medida em pes: ");
+	//Recebe a quantidade de pés e armazena na variável "pes"
+	scanf("%d%*c", &pes);
+	
+	polegadas = pes*12;
+	jardas = pes*3;
+	milhas = jardas*1760;
+	
+	// Imprime os resultados de conversão
+    printf("A quantidade de pés em outras unidades é: \n");
+    printf("A) Polegadas: %d\n", polegadas);
+    printf("B) Jardas: %d\n", jardas);
+    printf("C) Milhas: %d\n", milhas);
+
+    return 0;
+}
