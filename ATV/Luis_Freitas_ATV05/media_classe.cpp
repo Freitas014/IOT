@@ -9,9 +9,11 @@ int main() {
     float nota1, nota2, media, somaMedia = 0;
     int aprovados = 0, exame = 0, reprovados = 0;
 	
+	
 	while(i <= 6){
     printf("Aluno %d: \n", i);
     printf("Digite a primeira nota: ");
+    
     scanf("%f", &nota1);
     printf("Digite a segunda nota: ");
     scanf("%f", &nota2);
