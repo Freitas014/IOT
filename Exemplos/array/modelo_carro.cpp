@@ -31,6 +31,6 @@ int main() {
         float litros = 1000.0 / consumo[i];
         printf("%s: %.2f litros\n", modelos[i], litros);
     }
-	printf("Luis Freitas");
+	printf("\n\nLuis Freitas");
     return 0;
 }
